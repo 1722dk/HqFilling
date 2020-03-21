@@ -1,0 +1,48 @@
+﻿@model IEnumerable<HqFilling.Model.MachineModel>
+
+@{
+    ViewBag.Title = "Get All Machines";
+}
+
+<p>@Html.ActionLink("Create New", "Index", "Machine")</p>
+<table>
+    <tr>
+        <th>
+            Machine Id
+        </th>
+        <th>
+            Machine Name
+        </th>
+        <th>
+            Machine Code
+        </th>
+        <th>
+            Machine Volume
+        </th>
+        <th>
+            Entry Date
+        </th>
+        <th>
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.MachineId)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MachineName)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MachineCode)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.MachineVolume)
+            </td>
+            <td>@Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditMachine", "Machine", new { id = item.MachineId }, null) |
+                @Html.ActionLink("Details", "ViewMachineDetail", "Machine", new { id = item.MachineId }, null) |
+                @Html.ActionLink("Delete", "DeleteMachine", "Machine", new { id = item.MachineId }, null)
+            </td>
+        </tr>
+    }
+</table>

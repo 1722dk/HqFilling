@@ -1,0 +1,7 @@
+E:\Project-2013\HqFilling\HqFilling.DbContext\bin\Debug\HqFilling.DbContext.dll
+E:\Project-2013\HqFilling\HqFilling.DbContext\bin\Debug\HqFilling.DbContext.pdb
+E:\Project-2013\HqFilling\HqFilling.DbContext\obj\Debug\ResolveAssemblyReference.cache
+E:\Project-2013\HqFilling\HqFilling.DbContext\obj\Debug\HqFilling.DbContext.dll
+E:\Project-2013\HqFilling\HqFilling.DbContext\obj\Debug\HqFilling.DbContext.pdb
+E:\Project-2013\HqFilling\HqFilling.DbContext\bin\Debug\HqFilling.Model.dll
+E:\Project-2013\HqFilling\HqFilling.DbContext\bin\Debug\HqFilling.Model.pdb

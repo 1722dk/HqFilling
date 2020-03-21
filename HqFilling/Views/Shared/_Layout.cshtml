@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/superfish/superfish.css")" rel="stylesheet" media="screen" />
+    <script src="@Url.Content("~/Scripts/Libs/Jquery/jquery-1.9.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Libs/Superfish/hoverIntent.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/Libs/Superfish/superfish.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // initialise plugin
+            //var mainMenu = $('#mainMenu').superfish({
+            //add options here if required
+            //});
+            var menuOptions = {
+                speed: 'fast'
+            }
+            // initialise plugin
+            var mainMenu = $('#mainMenu').superfish(menuOptions);
+        });
+    </script>
+    <style type="text/css">
+        ul#menu li a
+        {
+            line-height: 1.9em;
+            padding: 5px 10px;
+        }
+        #menucontainer
+        {
+            margin-top: 20px;
+        }
+        #mainMenu
+        {
+            margin-top: -19px;
+        }
+        #main
+        {
+            margin-top: 39px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div id="header">
+            @*<div id="title">
+                <h1>
+                    My MVC Application</h1>
+            </div>*@
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <div id="menucontainer">
+                <ul class="sf-menu" id="mainMenu">@*menu*@
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li><a href="#">Basic Setup</a>
+                        <ul>
+                            <li>@Html.ActionLink("Account Code", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Fuel Machine", "GetAllMachineList", "Machine")</li>
+                            <li>@Html.ActionLink("Initial Fuel", "Index", "Fuel")</li>
+                            <li>@Html.ActionLink("Others", "Index", "Others")</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Asset</a>
+                        <ul>
+                            <li>@Html.ActionLink("Sales", "Index", "Sales")</li>
+                            <li>@Html.ActionLink("Purchase", "Index", "Purchase")</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Transaction</a>
+                        <ul>
+                            <li>@Html.ActionLink("Debit Transaction", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Credit Transaction", "Index", "Home")</li>
+                            <li>@Html.ActionLink("Loan", "Index", "Loan")</li>
+                            <li>@Html.ActionLink("Other Expenditure", "Index", "Expenditure")</li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reports</a>
+                        <ul>
+                            <li>@Html.ActionLink("Transactional Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Datewise Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("User Basis Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Bank Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Account Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Balance Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Due Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Overall Fuel Report", "Index", "Report")</li>
+                            <li>@Html.ActionLink("Miscellaneous Report", "Index", "Report")</li>
+                        </ul>
+                    </li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            @RenderBody()
+            <div id="footer">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

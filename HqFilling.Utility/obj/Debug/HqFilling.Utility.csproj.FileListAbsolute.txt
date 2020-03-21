@@ -1,0 +1,5 @@
+E:\Project-2013\HqFilling\HqFilling.Utility\bin\Debug\HqFilling.Utility.dll
+E:\Project-2013\HqFilling\HqFilling.Utility\bin\Debug\HqFilling.Utility.pdb
+E:\Project-2013\HqFilling\HqFilling.Utility\obj\Debug\ResolveAssemblyReference.cache
+E:\Project-2013\HqFilling\HqFilling.Utility\obj\Debug\HqFilling.Utility.dll
+E:\Project-2013\HqFilling\HqFilling.Utility\obj\Debug\HqFilling.Utility.pdb

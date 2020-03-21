@@ -1,0 +1,5 @@
+E:\Project-2013\HqFilling\HqFilling.Security\obj\Debug\ResolveAssemblyReference.cache
+E:\Project-2013\HqFilling\HqFilling.Security\bin\Debug\HqFilling.Security.dll
+E:\Project-2013\HqFilling\HqFilling.Security\bin\Debug\HqFilling.Security.pdb
+E:\Project-2013\HqFilling\HqFilling.Security\obj\Debug\HqFilling.Security.dll
+E:\Project-2013\HqFilling\HqFilling.Security\obj\Debug\HqFilling.Security.pdb
